@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="content-box">
+        <h1>Táborová přihláška</h1>
+
+        {% for label, messages in app.flashes %}
+            {% for message in messages %}
+                <div class="alert alert--{{ label }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+        <p class="help-text">
+            Aplikace slouží k&nbsp;přihlašování na&nbsp;skautský tábor pořádaný jednotkou
+            <b>{{ organizer }}</b></p>
+        <p class="help-text">
+            Tábor se&nbsp;bude konat v&nbsp;termínu <b>od&nbsp;{{ start }}&nbsp;do&nbsp;{{ end }}</b>
+            {{ place }}.
+        </p>
+        <p class="help-text">
+            Cena tábora zůstává stejná, jako v minulých letech, konkrétně tedy
+            <b>{{ price }}</b> pro registrované skauty, resp. {{ priceNonScout }} pro
+            neregistrované.
+        </p>
+        <p class="help-text">
+            Pro přihlášení Vašeho dítěte na tábor klikněte na tlačítko
+            <i>Vytvořit přihlášku</i> a&nbsp;postupujte podle instrukcí.
+        </p>
+        <br>
+        <div>
+            <a class="button" href="{{ path( 'application_add' ) }}">Vytvořit&nbsp;přihlášku</a>
+        </div>
+    </div>
+{% endblock %}

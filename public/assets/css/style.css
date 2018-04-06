@@ -48,9 +48,55 @@
 body {
     font-family: 'TheMix', sans-serif;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
 }
 
 h1, h2, h3 {
     font-family: 'Skaut Bold', serif;
     font-weight: 700;
+}
+
+a {
+    color: #255C9E;
+}
+
+.content-box {
+    background: #F6EBD8 url("../img/SKAUT_logo.svg") no-repeat top center;
+    max-width: 440px;
+    background-size: 250px auto;
+    text-align: center;
+    padding: 220px 25px 25px;
+    border-radius: 25px;
+}
+
+.help-text {
+    color: #657F6F;
+    font-size: 0.95rem;
+}
+
+.alert {
+    padding: .5rem;
+    color: #fff;
+}
+
+.alert--error {
+    background-color: #EA614A;
+}
+
+.alert--success {
+    background-color: #008836;
+}
+
+.button {
+    background-color: #255C9E;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border: 0;
+    line-height: 1.1;
+    font-size: 1rem;
 }
