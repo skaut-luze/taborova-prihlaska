@@ -1,0 +1,56 @@
+@import "normalize.min.css";
+
+@font-face {
+    font-family: 'Skaut Bold';
+    src: url("../font/skaut-bold-webfont.eot");
+    src: url("../font/skaut-bold-webfont.eot") format( 'embedded-opentype' ),
+         url("../font/skaut-bold-webfont.svg") format( 'svg' ),
+         url("../font/skaut-bold-webfont.woff") format( 'woff' );
+}
+
+@font-face {
+    font-family: 'TheMix';
+    font-weight: 400;
+    src: url("../font/TheMix_LT_400.svg");
+    src:
+    url("../font/TheMix_LT_400.svg") format( 'svg' ),
+    url("../font/TheMix_LT_400.eot") format( 'embedded-opentype' ),
+    url("../font/TheMix_LT_400.woff") format( 'woff' );
+}
+@font-face {
+    font-family: 'TheMix';
+    font-weight: 400;
+    font-style: italic;
+    src: url("../font/TheMix_LT_400i.svg");
+    src: url("../font/TheMix_LT_400i.eot") format( 'embedded-opentype' ),
+    url("../font/TheMix_LT_400i.svg") format( 'svg' ),
+    url("../font/TheMix_LT_400i.woff") format( 'woff' );
+}
+
+@font-face {
+    font-family: 'TheMix';
+    font-weight: 700;
+    src: url("../font/TheMix_LT_700.svg");
+    src: url("../font/TheMix_LT_700.eot") format( 'embedded-opentype' ),
+    url("../font/TheMix_LT_700.svg") format( 'svg' ),
+    url("../font/TheMix_LT_700.woff") format( 'woff' );
+}
+@font-face {
+    font-family: 'TheMix';
+    font-weight: 700;
+    font-style: italic;
+    src: url("../font/TheMix_LT_700i.svg");
+    src: url("../font/TheMix_LT_700i.eot") format( 'embedded-opentype' ),
+    url("../font/TheMix_LT_700i.svg") format( 'svg' ),
+    url("../font/TheMix_LT_700i.woff") format( 'woff' );
+}
+
+body {
+    font-family: 'TheMix', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: 'Skaut Bold', serif;
+    font-weight: 700;
+}
